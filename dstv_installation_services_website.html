@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSat DStv Installations & Repairs | Certified Technicians</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dstv: {
+                            blue: '#00529B',
+                            dark: '#0A192F',
+                            cyan: '#00A8E8',
+                            navy: '#0F2537',
+                            light: '#F4F7FA',
+                            accent: '#FF6B00'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0A192F 0%, #00529B 100%);
+        }
+        .pulse-btn {
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 14px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased selection:bg-dstv-cyan selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-dstv-dark text-white text-xs md:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-500 text-white">
+                    <span class="w-2 h-2 mr-1 bg-white rounded-full animate-ping"></span> Available Today
+                </span>
+                <span class="hidden sm:inline text-gray-300">Fast 7 Days a Week DStv Installation & Fault Repairs</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-300"><i class="fa-solid fa-clock text-dstv-cyan mr-1"></i> 07:00 - 19:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 bg-dstv-blue rounded-xl flex items-center justify-center text-white text-xl font-black shadow-md group-hover:bg-dstv-cyan transition">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-dstv-dark block leading-none">ProSat<span class="text-dstv-cyan">DStv</span></span>
+                    <span class="text-xs text-gray-500 font-medium tracking-wide">CERTIFIED INSTALLATION SERVICES</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#services" class="hover:text-dstv-blue transition">Services</a>
+                <a href="#why-us" class="hover:text-dstv-blue transition">Why Choose Us</a>
+                <a href="#areas" class="hover:text-dstv-blue transition">Coverage Areas</a>
+                <a href="#faqs" class="hover:text-dstv-blue transition">FAQs</a>
+            </nav>
+
+            <!-- Header Action Button (WhatsApp Only) -->
+            <div class="flex items-center space-x-3">
+                <a href="#book-form" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition">
+                    Book Service
+                </a>
+                <button onclick="sendQuickWhatsApp()" class="inline-flex items-center justify-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition shadow-md hover:shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Free Quote</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-hero text-white relative overflow-hidden py-16 lg:py-24">
+        <!-- Background Pattern Decor -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full border-8 border-white"></div>
+            <div class="absolute left-10 top-10 w-64 h-64 rounded-full border-4 border-white"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 px-3 py-1.5 rounded-full text-xs font-medium text-dstv-cyan">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Accredited & Certified DStv Installers</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Crystal Clear Signal & Expert DStv Installations
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-200 font-normal max-w-2xl mx-auto lg:mx-0">
+                        Fast, reliable, and professional DStv setup, dish alignment, ExtraView configuration, and fault repairs. Available 7 days a week.
+                    </p>
+
+                    <!-- Feature Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-sm text-gray-200 font-medium max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-center justify-center lg:justify-start space-x-2 bg-white/5 p-2 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-bolt text-amber-400"></i>
+                            <span>Same-Day Response</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start space-x-2 bg-white/5 p-2 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                            <span>Work Guaranteed</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start space-x-2 bg-white/5 p-2 rounded-lg border border-white/10 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-file-invoice text-dstv-cyan"></i>
+                            <span>Free Quotes</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="sendQuickWhatsApp()" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-emerald-500/20 transition transform active:scale-95 pulse-btn">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Chat on WhatsApp Now</span>
+                        </button>
+                        <a href="#book-form" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-4 rounded-xl font-semibold text-base transition">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <span>Book an Appointment</span>
+                        </a>
+                    </div>
+                    
+                    <p class="text-xs text-gray-400 flex items-center justify-center lg:justify-start space-x-1 pt-1">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>No upfront charges. Get a instant free estimate directly on WhatsApp.</span>
+                    </p>
+                </div>
+
+                <!-- Quick Inquiry Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-gray-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-gray-100">
+                        <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-dstv-blue/10 text-dstv-blue flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-900">Request Service Quote</h3>
+                                <p class="text-xs text-gray-500">Instant WhatsApp routing</p>
+                            </div>
+                        </div>
+
+                        <!-- Hero Quick Form -->
+                        <form id="heroQuickForm" onsubmit="handleHeroSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Your Name</label>
+                                <input type="text" id="heroName" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue focus:border-transparent outline-none transition text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Your Suburb / Area</label>
+                                <input type="text" id="heroSuburb" required placeholder="e.g. Sandton, Randburg, etc." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue focus:border-transparent outline-none transition text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Service Needed</label>
+                                <select id="heroService" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue focus:border-transparent outline-none transition text-sm bg-white">
+                                    <option value="Standard DStv Installation">Standard New Installation</option>
+                                    <option value="Dish Alignment & Signal Fixing">Dish Alignment / Signal Fixing</option>
+                                    <option value="ExtraView Setup">ExtraView Setup</option>
+                                    <option value="TV Wall Mounting">TV Wall Mounting</option>
+                                    <option value="LNB Replacement & Fault Repair">LNB / Cable Fault Repair</option>
+                                    <option value="DStv Relocation / Upgrade">Decoder Upgrade / Relocation</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center space-x-2 text-base">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Get Free Quote via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Advantages Strip -->
+    <section class="bg-dstv-navy text-white py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-3">
+                    <div class="text-dstv-cyan text-2xl mb-1"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <div class="font-bold text-lg">Fast Response</div>
+                    <div class="text-xs text-gray-400">On-site within hours</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-dstv-cyan text-2xl mb-1"><i class="fa-solid fa-user-check"></i></div>
+                    <div class="font-bold text-lg">Certified Pros</div>
+                    <div class="text-xs text-gray-400">Trained technician team</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-dstv-cyan text-2xl mb-1"><i class="fa-solid fa-satellite"></i></div>
+                    <div class="font-bold text-lg">Clear Signal</div>
+                    <div class="text-xs text-gray-400">Guaranteed 100% signal strength</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-dstv-cyan text-2xl mb-1"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="font-bold text-lg">No Hidden Fees</div>
+                    <div class="text-xs text-gray-400">Free upfront WhatsApp quotes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-dstv-blue uppercase tracking-widest mb-2">Our Capabilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-dstv-dark">Comprehensive DStv & Audio-Visual Solutions</h3>
+                <p class="mt-4 text-gray-600">From brand new dish setups to complex multi-room ExtraView configurations, our technicians handle it all with speed and precision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Standard DStv Installation</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Complete setup for Single View, Explora, or HD Decoders. Includes dish mounting, cable routing, alignment, and channel activation.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('Standard DStv Installation')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Dish Alignment & Signal Repair</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Experiencing "E48-32 No Signal" or bad weather pixelation? We re-align your satellite dish accurately using digital signal meters.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('Dish Alignment & Signal Repair')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">ExtraView & MultiView Setup</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Watch different channels in up to 3 rooms under a single subscription. Smart LNB installation and heart-beat cabling setup.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('ExtraView Setup')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">TV Wall Mounting</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Clean, secure TV wall mounting for LED, OLED, or Plasma screens of all sizes with hidden cable management solutions.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('TV Wall Mounting')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-plug-circle-exclamation"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Fault Finding & LNB Replacement</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Replacing cracked, sun-damaged, or rusted LNBs, broken coaxial cables, damaged splitters, and connector replacements.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('Fault Finding & LNB Replacement')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 text-dstv-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dstv-blue group-hover:text-white transition">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Relocations & Upgrades</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Moving home? We take down your dish setup at your old house and re-install it seamlessly at your new residence.
+                        </p>
+                    </div>
+                    <button onclick="sendServiceInquiry('Relocation & Upgrade')" class="w-full py-3 bg-gray-50 hover:bg-emerald-50 text-emerald-600 font-semibold rounded-xl text-sm transition flex items-center justify-center space-x-2 border border-gray-200">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Inquire for This Service</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-xs font-bold text-dstv-blue uppercase tracking-widest">Why ProSat Installations</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-dstv-dark">Dedicated to Fast, Reliable & Long-Lasting Signal Solutions</h3>
+                    <p class="text-gray-600">
+                        We take pride in delivering neat workmanship, quick turnaround times, and friendly customer support. Whether it is a small repair or complex setup, we treat every job with top care.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Accredited Signal Testing</h4>
+                                <p class="text-sm text-gray-500">We utilize specialized spectrum analyzers to lock in maximum signal quality even during rainy weather.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Guaranteed Workmanship</h4>
+                                <p class="text-sm text-gray-500">All installations, LNB replacements, and wall mountings come backed with our satisfaction warranty.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Clean & Tidy Finish</h4>
+                                <p class="text-sm text-gray-500">We prioritize aesthetic cabling, avoiding loose wires or unsightly exterior wall penetrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="bg-dstv-light rounded-3xl p-8 border border-gray-200/80">
+                    <h4 class="font-bold text-xl text-dstv-dark mb-6 flex items-center space-x-2">
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <span>What Our Clients Say</span>
+                    </h4>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="flex text-amber-400 text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-600 italic">"Sent a message on WhatsApp and the technician arrived within 2 hours. He fixed our E48-32 signal issue in no time. Super friendly and fast!"</p>
+                            <div class="mt-3 text-xs font-bold text-gray-900">— Sarah M., Residential Client</div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="flex text-amber-400 text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-600 italic">"Clean TV wall mounting and full Explora ExtraView setup done. Cable management is top quality!"</p>
+                            <div class="mt-3 text-xs font-bold text-gray-900">— David K., Home Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed WhatsApp Booking Form -->
+    <section id="book-form" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="bg-dstv-dark text-white p-8 sm:p-10 text-center relative">
+                    <div class="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Detailed WhatsApp Booking Form</h3>
+                    <p class="text-gray-300 text-sm mt-2 max-w-xl mx-auto">
+                        Fill out the details below. Clicking send will automatically generate a structured message directly into WhatsApp for instant confirmation.
+                    </p>
+                </div>
+
+                <form id="bookingForm" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-10 space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400">
+                                    <i class="fa-regular fa-user"></i>
+                                </span>
+                                <input type="text" id="fullName" required placeholder="e.g. Michael Scott" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition">
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                                Contact Phone Number <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </span>
+                                <input type="tel" id="phoneNumber" required placeholder="e.g. 082 123 4567" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Physical Address / Suburb -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                                Suburb & Address <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <input type="text" id="address" required placeholder="e.g. 12 Main Rd, Bryanston" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition">
+                            </div>
+                        </div>
+
+                        <!-- Service Required -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                                Service Required <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </span>
+                                <select id="serviceRequired" required class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition bg-white">
+                                    <option value="">Select a service...</option>
+                                    <option value="New Standard Installation">New Standard Installation</option>
+                                    <option value="Dish Alignment / Signal Fix">Dish Alignment / Signal Repair</option>
+                                    <option value="ExtraView Setup">ExtraView / MultiView Setup</option>
+                                    <option value="TV Wall Mounting">TV Wall Mounting</option>
+                                    <option value="Fault Repair / LNB Replacement">Fault Repair / LNB Replacement</option>
+                                    <option value="DStv Relocation">DStv Relocation</option>
+                                    <option value="Other AV Inquiry">Other Custom Work</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preferred Date & Time -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                            Preferred Date & Preferred Time Slot
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400">
+                                <i class="fa-regular fa-clock"></i>
+                            </span>
+                            <input type="text" id="preferredTime" placeholder="e.g. Tomorrow Morning / As soon as possible" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition">
+                        </div>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                            Additional Details / Error Codes
+                        </label>
+                        <textarea id="notes" rows="3" placeholder="Describe your issue or request (e.g. 'Showing error code E48-32', 'Need 2 TVs mounted')" class="w-full p-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-dstv-blue outline-none text-sm transition"></textarea>
+                    </div>
+
+                    <!-- Submission CTA -->
+                    <button type="submit" class="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center space-x-3 text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Send Booking via WhatsApp</span>
+                    </button>
+
+                    <p class="text-xs text-center text-gray-400 mt-2">
+                        <i class="fa-solid fa-lock text-gray-400 mr-1"></i> Your details are only sent to our technician via WhatsApp to provide your free quote.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Areas Section -->
+    <section id="areas" class="py-16 bg-dstv-light border-t border-gray-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold text-dstv-blue uppercase tracking-widest mb-2">Fast Mobile Service</h2>
+            <h3 class="text-3xl font-extrabold text-dstv-dark mb-4">Service Area Coverage</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-10 text-sm">
+                Our equipped mobile units cover all surrounding suburbs and neighborhoods. Contact us to verify your location!
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>North Suburbs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>South Suburbs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>East Suburbs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>West Suburbs</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>Central City</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-pin text-dstv-blue"></i>
+                    <span>Outer Metro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold text-dstv-blue uppercase tracking-widest mb-2">Got Questions?</h2>
+                <h3 class="text-3xl font-extrabold text-dstv-dark">Frequently Asked Questions</h3>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-2xl p-6">
+                    <h4 class="font-bold text-gray-900 text-base mb-2">How do I get a quote?</h4>
+                    <p class="text-gray-600 text-sm">Simply click any of our WhatsApp buttons or fill in the booking form on this site. We provide instant free estimates based on your specific needs.</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6">
+                    <h4 class="font-bold text-gray-900 text-base mb-2">What causes error code E48-32?</h4>
+                    <p class="text-gray-600 text-sm">E48-32 means your decoder is receiving no signal. This can be caused by strong wind shifting your dish, a damaged LNB, loose cables, or extreme bad weather.</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6">
+                    <h4 class="font-bold text-gray-900 text-base mb-2">Do you work on weekends?</h4>
+                    <p class="text-gray-600 text-sm">Yes! Our technicians operate 7 days a week, including Saturdays, Sundays, and public holidays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dstv-dark text-white pt-16 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-gray-800">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-dstv-blue rounded-xl flex items-center justify-center text-white text-lg font-black">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <span class="text-xl font-black text-white">ProSat<span class="text-dstv-cyan">DStv</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Your trusted satellite TV and audio-visual installation partner. Prompt service, clear signal guaranteed, and reliable technicians.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-sm uppercase tracking-wider mb-4 text-gray-300">Quick Links</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition">Installation Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                        <li><a href="#areas" class="hover:text-white transition">Coverage Areas</a></li>
+                        <li><a href="#book-form" class="hover:text-white transition">WhatsApp Inquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-sm uppercase tracking-wider mb-4 text-gray-300">Working Hours</h5>
+                    <p class="text-sm text-gray-400 mb-2">Monday - Sunday: 07:00 AM - 07:00 PM</p>
+                    <p class="text-xs text-gray-500 mb-4">Emergency signal fault repairs available.</p>
+                    <button onclick="sendQuickWhatsApp()" class="inline-flex items-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp Technician</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-500">
+                <p>&copy; <span id="year"></span> ProSat DStv Installations. All rights reserved. Third-party logos and trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button (Fixed Bottom-Right) -->
+    <a href="javascript:void(0)" onclick="sendQuickWhatsApp()" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 active:scale-95 pulse-btn" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript Configuration & Messaging Logic -->
+    <script>
+        /* 
+        ========================================================================
+        DEVELOPER / OWNER CONFIGURATION BOX
+        Change your WhatsApp Phone Number and Pre-written Messages below!
+        ========================================================================
+        */
+        const CONFIG = {
+            // Replace with your technician's WhatsApp phone number in international format (no + or spaces)
+            // Example for South Africa (+27): '27821234567'
+            whatsappNumber: '27821234567',
+
+            // Default pre-written message for general WhatsApp inquiries
+            defaultMessage: 'Hello ProSat DStv! I am inquiring about your DStv installation and signal repair services. Please send me more information.',
+
+            // Custom Greeting Template for Form Submissions
+            formHeader: '📡 *NEW DSTV SERVICE BOOKING INQUIRY*'
+        };
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        /**
+         * Opens WhatsApp with the standard pre-written quick message
+         */
+        function sendQuickWhatsApp() {
+            const encodedMsg = encodeURIComponent(CONFIG.defaultMessage);
+            const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMsg}`;
+            window.open(waUrl, '_blank');
+        }
+
+        /**
+         * Triggers inquiry for a specific service card click
+         */
+        function sendServiceInquiry(serviceName) {
+            const message = `Hello ProSat DStv! I am interested in getting a quote for: *${serviceName}*. Please let me know your availability.`;
+            const encodedMsg = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMsg}`;
+            window.open(waUrl, '_blank');
+        }
+
+        /**
+         * Handles Quick Hero Form Submission
+         */
+        function handleHeroSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('heroName').value.trim();
+            const suburb = document.getElementById('heroSuburb').value.trim();
+            const service = document.getElementById('heroService').value;
+
+            const text = `${CONFIG.formHeader}\n\n` +
+                         `👤 *Name:* ${name}\n` +
+                         `📍 *Suburb:* ${suburb}\n` +
+                         `🛠️ *Service Required:* ${service}\n\n` +
+                         `Please provide me with a free quote and availability. Thank you!`;
+
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodedText}`, '_blank');
+        }
+
+        /**
+         * Handles Full Detailed Booking Form Submission
+         */
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            // Extract form inputs
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNumber').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const service = document.getElementById('serviceRequired').value;
+            const preferredTime = document.getElementById('preferredTime').value.trim() || 'Flexible / As soon as possible';
+            const notes = document.getElementById('notes').value.trim() || 'None provided';
+
+            // Construct structured pre-written message
+            const message = `${CONFIG.formHeader}\n\n` +
+                            `👤 *Full Name:* ${name}\n` +
+                            `📞 *Phone Number:* ${phone}\n` +
+                            `📍 *Address/Suburb:* ${address}\n` +
+                            `🛠️ *Service Required:* ${service}\n` +
+                            `⏰ *Preferred Time/Date:* ${preferredTime}\n` +
+                            `📝 *Additional Notes:* ${notes}\n\n` +
+                            `Please review my details and send me a free quote!`;
+
+            // Open WhatsApp with populated message
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
